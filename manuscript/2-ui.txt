@@ -131,7 +131,7 @@ Conflicts are easier to solve with declarative UIs since there isn't an internal
 If you don't like the APIs that were given by `UIKit` or `AppKit` you can try any of the libraries mentioned before, they provide you with a custom syntax for defining your app. There are some others out there like [MarkupKit](https://github.com/gk-brown/MarkupKit) with which you can define the user interface in a XML file or [LeeGo](https://github.com/wangshengjia/LeeGo) where you can describe your whole UI in small pieces of Lego style's bricks.
 
 {aside, class: tip}
-Depending on third party libraries comes with a downside, maintainance. If the library introduces breaking changes, or the language does, your project will get stuck in a particular version and you'll need to spend some time to bump the dependency version.
+Depending on third party libraries comes with a downside, maintenance. If the library introduces breaking changes, or the language does, your project will get stuck in a particular version and you'll need to spend some time to bump the dependency version.
 {/aside}
 
 ## Navigation
@@ -162,7 +162,7 @@ protocol Coordinator: class {
   func start()
 }
 ``` 
-Coordinators have a reference to their children, so that they are not released from memory. Coordinators can delegate to their parent coordinator by using the delengate pattern between them. When the method `start` gets called, the view to be presented is initialized and presented in the context the coordinator is given.
+Coordinators have a reference to their children, so that they are not released from memory. Coordinators can delegate to their parent coordinator by using the delegate pattern between them. When the method `start` gets called, the view to be presented is initialized and presented in the context the coordinator is given.
 
 The benefits of the pattern are greatly described by Soroush:
 
